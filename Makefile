@@ -1,6 +1,6 @@
 # Need package dev-qt/qtwebkit
 
-VENV_DIR = ~/git-repos/blink-install/venv
+VENV_DIR = ~/local/venv
 
 SIP_BASE_URL = http://download.ag-projects.com/SipClient
 MANUAL_DEPS = sipclients-0.35.0 python-xcaplib-1.0.17 python-sipsimple-0.35.0 python-msrplib-0.15.0 python-eventlib-0.1.1 python-backports-1.0.1 
