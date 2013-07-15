@@ -1,0 +1,15 @@
+--- __init__.py	2011-11-11 18:23:49.000000000 +0100
++++ __init__new.py	2013-07-15 14:38:54.784967481 +0200
+@@ -100,11 +100,9 @@
+         else:
+             raise RuntimeError('cannot obtain the process modules: %s' % FormatError())
+         gcry_control = libgcrypt.gcry_control
+-    elif system == 'cygwin':
++    else:
+         libgcrypt = load_library(name='gcrypt', version=11)
+         gcry_control = libgcrypt.gcry_control
+-    else:
+-        gcry_control = libgnutls.gcry_control
+ 
+     gcry_control(GCRYCTL_SET_THREAD_CBS, c_void_p(gcrypt_thread_callbacks_ptr))
+     if system == 'cygwin':
